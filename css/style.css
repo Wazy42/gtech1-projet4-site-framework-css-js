@@ -5,3 +5,9 @@ body {
 .margin10px-left {
     margin-left: 10px;
 }
+
+.carousel-item .img-responsive {
+    width: 100%;
+    max-height: 75vh;
+    object-fit: cover;
+}
