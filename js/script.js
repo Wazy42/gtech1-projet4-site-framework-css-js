@@ -1,12 +1,18 @@
-$('.carousel').carousel({
+
+
+$('.carousel.carousel-slider').carousel({
     fullWidth: true,
-    indicators: true
+    indicators: false
 });
 
-$('i#prev').click(function() {
-$('.carousel').carousel('prev');
+$('.moveNextCarousel').click(function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    $('.carousel').carousel('next');
 });
 
-$('i#next').click(function() {
-$('.carousel').carousel('next');
+$('.movePrevCarousel').click(function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    $('.carousel').carousel('prev');
 });

@@ -13,12 +13,21 @@
   </head>
   <body>
       <div class="card-panel cyan lighten-3 center">INDEX (MENU DES 3 SITES)</div>
-      <div class="carousel carousel-slider">
-        <a class="carousel-item" href="laby.html"><img src="img/placeholder.png"></a>
-        <a class="carousel-item" href="p4.html"><img src="img/placeholder.png"></a>
-        <a class="carousel-item" href="ef.html"><img src="img/placeholder.png"></a>
+      <div id="carouselFirst" class="carousel carousel-slider">
+        <div class="carousel-fixed-item center clearfix">
+          <a id="carousel-prev" class="movePrevCarousel btn waves-effect left">Prev</a>
+          <a id="carousel-next" class="moveNextCarousel btn waves-effect right">Next</a>
+        </div>
+        <div class="carousel-item red" href="#one!">
+          <a href="ef.html"><img class="img-responsive" src="img/placeholder.png" alt="placeholder"></a>
+        </div>
+        <div class="carousel-item amber white-text" href="#two!">
+          <a href="laby.html"><img class="img-responsive" src="img/placeholder.png" alt="placeholder"></a>
+        </div>
+        <div class="carousel-item green white-text" href="#three!">
+          <a href="p4.html"><img class="img-responsive" src="img/placeholder.png" alt="placeholder"></a>
+        </div>
       </div>
-      <div class="row slider-center"><i id="next" class="material-icons">chevron_right</i> <i id="prev" class="material-icons">chevron_left</i></div>
 
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/jquery.min.js"></script>
