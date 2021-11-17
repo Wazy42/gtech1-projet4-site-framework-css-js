@@ -10,3 +10,7 @@ $('.carousel').carousel('prev');
 $('i#next').click(function() {
 $('.carousel').carousel('next');
 });
+
+$(document).ready(function(){
+    $('.sidenav').sidenav();
+});
