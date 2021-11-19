@@ -1,11 +1,21 @@
 body {
     font-family: Rubik;
 }
+
 .margin10px-left {
     margin-left: 10px;
 }
-.carousel-item .img-responsive {
+
+.carousel-slider .carousel-fixed-item {
+    pointer-events: none;
+}
+
+.carousel-slider .carousel-fixed-item .btn {
+    pointer-events: all;
+}
+
+.carousel-slider .carousel-item .img-responsive {
     width: 100%;
-    max-height: 90vh;
+    max-height: calc(100vh - 64px);
     object-fit: cover;
 }
