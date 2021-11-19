@@ -8,6 +8,9 @@
     <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
     <link rel="stylesheet" href="css/style.css">
 
+    <title>Turbo Portfolio Ratio</title>
+  </head>
+  <body>
     <!--Let browser know website is optimized for mobile-->
     <nav>
       <div class="nav-wrapper">
@@ -19,6 +22,7 @@
           <li><a href="ef.html">EntityFall</a></li>
           <li><a href="laby.html" >Labyrinthe</a></li>
           <li><a href="p4.html">Puissance 4</a></li>
+          <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">contact</a></li>
         </ul>
       </div>
     </nav>  
@@ -27,32 +31,24 @@
       <li><a href="ef.html">EntityFall</a></li>
       <li><a href="laby.html">Labyrinthe</a></li>
       <li><a href="p4.html">Puissance 4</a></li>
+      <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">contact</a></li>
     </ul>
 
-    <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-  </head>
-  <body>
-      <div id="carouselFirst" class="carousel carousel-slider">
-        <div class="carousel-fixed-item center clearfix">
-          <a id="carousel-prev" class="movePrevCarousel btn waves-effect left">Prev</a>
-          <a id="carousel-next" class="moveNextCarousel btn waves-effect right">Next</a>
-        </div>
-        <div class="carousel-item " href="#one!">
-          <a href="ef.html"><img class="img-responsive" src="img/ef logo.PNG" alt="placeholder"></a>
-        </div>
-        <div class="carousel-item" href="#two!">
-          <a href="laby.html"><img class="img-responsive" src="img/laby logo.png" alt="placeholder"></a>
-        </div>
-        <div class="carousel-item" href="#three!">
-          <a href="p4.html"><img class="img-responsive" src="img/p4 logo.png" alt="placeholder"></a>
-        </div>
+    <div id="carouselFirst" class="carousel carousel-slider">
+      <div class="carousel-fixed-item center clearfix">
+        <a id="carousel-prev" class="movePrevCarousel btn waves-effect left">Prev</a>
+        <a id="carousel-next" class="moveNextCarousel btn waves-effect right">Next</a>
       </div>
-
-        <!-- Modal Trigger -->
-    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">contact</a>
+      <div class="carousel-item " href="#one!">
+        <a href="ef.html"><img class="img-responsive" src="img/ef-logo.PNG" alt="EntityFall logo"></a>
+      </div>
+      <div class="carousel-item" href="#two!">
+        <a href="laby.html"><img class="img-responsive" src="img/laby-logo.png" alt="Labyrithe logo"></a>
+      </div>
+      <div class="carousel-item" href="#three!">
+        <a href="p4.html"><img class="img-responsive" src="img/p4-logo.png" alt="Puissance 4 logo"></a>
+      </div>
+    </div>
 
     <!-- Modal Structure -->
     <div id="modal1" class="modal">
@@ -62,25 +58,26 @@
             <div class="row">
               <div class="input-field col s6">
                 <input id="first_name" type="text" class="validate">
-                <label for="first_name">First Name</label>
+                <label for="first_name">Prénom</label>
               </div>
               <div class="input-field col s6">
                 <input id="last_name" type="text" class="validate">
-                <label for="last_name">Last Name</label>
+                <label for="last_name">Nom</label>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s12">
                 <input id="email" type="text" class="validate">
-                <label for="email">Email</label>
+                <label for="email">E-mail</label>
               </div>
             </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Envoyer</a>
       </div>
     </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
-  </div>
+
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>

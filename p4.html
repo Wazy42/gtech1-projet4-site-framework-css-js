@@ -8,6 +8,9 @@
     <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
     <link rel="stylesheet" href="css/style.css">
 
+    <title>Puissance 4</title>
+  </head>
+  <body>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <nav>
@@ -20,6 +23,7 @@
           <li><a href="ef.html">EntityFall</a></li>
           <li><a href="laby.html" >Labyrinthe</a></li>
           <li class="active"><a href="p4.html">Puissance 4</a></li>
+          <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">contact</a></li>
         </ul>
       </div>
     </nav>  
@@ -28,9 +32,37 @@
       <li><a href="ef.html">EntityFall</a></li>
       <li><a href="laby.html">Labyrinthe</a></li>
       <li class="active"><a href="p4.html">Puissance 4</a></li>
+      <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">contact</a></li>
     </ul>
-  </head>
-  <body>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="first_name" type="text" class="validate">
+                <label for="first_name">Prénom</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="last_name" type="text" class="validate">
+                <label for="last_name">Nom</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="email" type="text" class="validate">
+                <label for="email">E-mail</label>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Envoyer</a>
+      </div>
+    </div>
+
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
