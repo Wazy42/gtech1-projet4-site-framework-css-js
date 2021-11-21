@@ -11,6 +11,7 @@ body {
     margin-left: 10px;
 }
 
+/* Carousel des projets */
 .carousel-slider .carousel-fixed-item {
     pointer-events: none;
 }
@@ -25,20 +26,15 @@ body {
     object-fit: cover;
 }
 
+/* Images header */
 .centered{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    margin-bottom: 5vh;
     width: 80%;
 }
 
-.mini-center{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20%;
-}
-
+/* Puissance 4 */
 #game-board {
 	background: #0074B3;
 	width: 730px;
@@ -50,7 +46,7 @@ body {
 	display: inline-block;
 }
 
-.column:hover  circle.free{
+.column:hover  circle.free {
 	fill: #D5E4ED;
 }
 
@@ -58,10 +54,10 @@ circle.free {
 	fill: #fff;
 }
 
-circle.red {
+circle.Rouge {
 	fill: #D50000;
 }
 
-circle.yellow {
+circle.Jaune {
 	fill: #DAD400;
 }

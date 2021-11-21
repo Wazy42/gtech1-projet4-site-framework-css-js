@@ -12,20 +12,22 @@
   </head>
   <body>
     <!--Let browser know website is optimized for mobile-->
-    <nav>
-      <div class="nav-wrapper">
-        <a href="#" class="sidenav-trigger" data-target="mobile-nav">
-          <i class="material-icons">menu</i>
-        </a>
-        <a href="index.html" class="brand-logo margin10px-left">Turbo Portfolio Ratio</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="ef.html">EntityFall</a></li>
-          <li><a href="laby.html" >Labyrinthe</a></li>
-          <li><a href="p4.html">Puissance 4</a></li>
-          <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">contact</a></li>
-        </ul>
-      </div>
-    </nav>  
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+            <i class="material-icons">menu</i>
+          </a>
+          <a href="index.html" class="brand-logo margin10px-left">Turbo Portfolio Ratio</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="ef.html">EntityFall</a></li>
+            <li><a href="laby.html" >Labyrinthe</a></li>
+            <li><a href="p4.html">Puissance 4</a></li>
+            <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
     <ul class="sidenav" id="mobile-nav">
       <li><a href="ef.html">EntityFall</a></li>
@@ -34,23 +36,7 @@
       <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">contact</a></li>
     </ul>
 
-    <div id="carouselFirst" class="carousel carousel-slider">
-      <div class="carousel-fixed-item center clearfix">
-        <a id="carousel-prev" class="movePrevCarousel btn waves-effect left">←</a>
-        <a id="carousel-next" class="moveNextCarousel btn waves-effect right">→</a>
-      </div>
-      <div class="carousel-item ">
-        <a href="ef.html"><img class="img-responsive" src="img/ef-logo.png" alt="EntityFall logo"></a>
-      </div>
-      <div class="carousel-item">
-        <a href="laby.html"><img class="img-responsive" src="img/laby-logo.png" alt="Labyrithe logo"></a>
-      </div>
-      <div class="carousel-item">
-        <a href="p4.html"><img class="img-responsive" src="img/p4-logo.jpg" alt="Puissance 4 logo"></a>
-      </div>
-    </div>
-
-    <!-- Modal Structure -->
+    <!-- Modal formulaire contact -->
     <div id="modal1" class="modal">
       <div class="modal-content">
         <div class="row">
@@ -74,36 +60,48 @@
         </div>
       </div>
       <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Envoyer</a>
+        <a  class="modal-close waves-effect waves-green btn-flat">Envoyer</a>
+      </div>
+    </div>
+
+    <!-- Carousel avec projets -->
+    <div id="carouselFirst" class="carousel carousel-slider">
+      <div class="carousel-fixed-item center clearfix">
+        <a id="carousel-prev" class="movePrevCarousel btn waves-effect left">←</a>
+        <a id="carousel-next" class="moveNextCarousel btn waves-effect right">→</a>
+      </div>
+      <div class="carousel-item ">
+        <a href="ef.html"><img class="img-responsive" src="img/ef-logo.png" alt="EntityFall logo"></a>
+      </div>
+      <div class="carousel-item">
+        <a href="laby.html"><img class="img-responsive" src="img/laby-logo.png" alt="Labyrithe logo"></a>
+      </div>
+      <div class="carousel-item">
+        <a href="p4.html"><img class="img-responsive" src="img/p4-logo.jpg" alt="Puissance 4 logo"></a>
       </div>
     </div>
     
+    <!-- Présentations de créateurs -->
     <div class="row">
-      <div class="col s12 m5 left">
+      <div class="col s12 m6">
         <div class="card">
           <div class="card-image">
-            <img src="images/sample-1.jpg" alt="photo de profil">
+            <img src="img/placeholder.png" alt="photo de profil Lucas">
             <span class="card-title">Card Title</span>
           </div>
           <div class="card-content">
             <p>description Lucas</p>
           </div>
-          <div class="card-action">
-            <a href="#">link social media ?</a>
-          </div>
         </div>
       </div>
-      <div class="col s12 m5 right">
+      <div class="col s12 m6">
         <div class="card">
           <div class="card-image">
-            <img src="images/sample-1.jpg" alt="photo de profil">
+            <img src="img/placeholder.png" alt="photo de profil Raphaël">
             <span class="card-title">Card Title</span>
           </div>
           <div class="card-content">
             <p>description Raph</p>
-          </div>
-          <div class="card-action">
-            <a href="#">link social media ?</a>
           </div>
         </div>
       </div>

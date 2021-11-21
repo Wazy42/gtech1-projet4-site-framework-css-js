@@ -13,20 +13,22 @@
   <body>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <nav>
-      <div class="nav-wrapper">
-        <a href="#" class="sidenav-trigger" data-target="mobile-nav">
-          <i class="material-icons">menu</i>
-        </a>
-        <a href="index.html" class="brand-logo margin10px-left">Turbo Portfolio Ratio</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="ef.html">EntityFall</a></li>
-          <li class="active"><a href="laby.html" >Labyrinthe</a></li>
-          <li><a href="p4.html">Puissance 4</a></li>
-          <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">contact</a></li>
-        </ul>
-      </div>
-    </nav>  
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+            <i class="material-icons">menu</i>
+          </a>
+          <a href="index.html" class="brand-logo margin10px-left">Turbo Portfolio Ratio</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="ef.html">EntityFall</a></li>
+            <li class="active"><a href="laby.html" >Labyrinthe</a></li>
+            <li><a href="p4.html">Puissance 4</a></li>
+            <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
     <ul class="sidenav" id="mobile-nav">
       <li><a href="ef.html">EntityFall</a></li>
@@ -35,7 +37,7 @@
       <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">contact</a></li>
     </ul>
 
-    <!-- Modal Structure -->
+    <!-- Modal formulaire contact -->
     <div id="modal1" class="modal">
       <div class="modal-content">
         <div class="row">
@@ -59,14 +61,17 @@
         </div>
       </div>
       <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Envoyer</a>
+        <a class="modal-close waves-effect waves-green btn-flat">Envoyer</a>
       </div>
     </div>
 
+    <!-- Header -->
     <div class="header">
       <h2 class="center">Projet de Terminale: Labyrinthe en Python</h2>
       <img class="centered responsive-img" src="img/interface_laby.jpg" alt="Interface Labyrithe fenêtre">
     </div>
+    <div class="divider"></div>
+    <!-- Description du projet -->
     <div class="row">
       <div class="col s12 m10 offset-m1">
         <h3>Description du projet:</h3>
@@ -77,6 +82,7 @@
           (ici PyGame).
         </p>
         <div class="divider"></div>
+        <!-- Différents algrithmes (gallerie) -->
         <h3>Création aléatoire avec différents algorithmes</h3>
         <div class="section row">
           <div class="section col s12 m6 l4">
@@ -101,15 +107,16 @@
           </div>
         </div>
         <div class="divider"></div>
-        <h3>Fonctionnalitées</h3>
+        <!-- Fonctionnalités -->
+        <h3>Fonctionnalités</h3>
         <div class="section row">
-          <img class="col s12 l6" src="img/ig_laby.jpg" alt="Labyrinthe en jeu">
+          <img class="col s12 l6 responsive-img" src="img/ig_laby.jpg" alt="Labyrinthe en jeu">
           <div class="col s12 l6">
             <h4>Labyrinthe en jeu</h4>
             <p class="justify flow-text">
               Le labyrinthe affiché peut être joué à l'aide des flèches du clavier. La
               postition actuelle est représentée par un point et le chemin parcouru par 
-              des flèches. Le bouton "Recommencer" nours fait revenir à l'entrée du
+              des flèches. Le bouton "Recommencer" nous fait revenir à l'entrée du
               labyrinthe.
             </p>
           </div>
@@ -124,7 +131,7 @@
               "reconstruire", il sera regénéré avec l'algorithme en surbrillance.
             </p>
           </div>
-          <img class="col s12 l6" src="img/fin_partie_laby.jpg" alt="Labyrinthe fin de partie solution">
+          <img class="col s12 l6 responsive-img" src="img/fin_partie_laby.jpg" alt="Labyrinthe fin de partie solution">
         </div>
       </div>
 

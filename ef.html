@@ -13,20 +13,22 @@
   <body>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <nav>
-      <div class="nav-wrapper">
-        <a href="#" class="sidenav-trigger" data-target="mobile-nav">
-          <i class="material-icons">menu</i>
-        </a>
-        <a href="index.html" class="brand-logo margin10px-left">Turbo Portfolio Ratio</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li class="active"><a href="ef.html">EntityFall</a></li>
-          <li><a href="laby.html" >Labyrinthe</a></li>
-          <li><a href="p4.html">Puissance 4</a></li>
-          <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">contact</a></li>
-        </ul>
-      </div>
-    </nav>  
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+            <i class="material-icons">menu</i>
+          </a>
+          <a href="index.html" class="brand-logo margin10px-left">Turbo Portfolio Ratio</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li class="active"><a href="ef.html">EntityFall</a></li>
+            <li><a href="laby.html" >Labyrinthe</a></li>
+            <li><a href="p4.html">Puissance 4</a></li>
+            <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
     <ul class="sidenav" id="mobile-nav">
       <li class="active"><a href="ef.html">EntityFall</a></li>
@@ -35,7 +37,7 @@
       <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">contact</a></li>
     </ul>
     
-    <!-- Modal Structure -->
+    <!-- Modal formulaire contact -->
     <div id="modal1" class="modal">
       <div class="modal-content">
         <div class="row">
@@ -59,14 +61,17 @@
         </div>
       </div>
       <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Envoyer</a>
+        <a class="modal-close waves-effect waves-green btn-flat">Envoyer</a>
       </div>
     </div>
 
+    <!-- Header -->
     <div class="header">
       <h2 class="center">Projet en Seconde et Première: EntityFall</h2>
-      <img class="responsive-img" src="img/ef-logo.png" alt="Logo EntityFall">
+      <img class="responsive-img centered" src="img/ef-logo.png" alt="Logo EntityFall">
     </div>
+    <div class="divider"></div>
+    <!-- Description du jeu -->
     <div class="row">
       <div class="col s12 m10 offset-m1">
         <h3>Description du jeu</h3>
@@ -76,6 +81,7 @@
           obstacles.
         </p>
         <div class="divider"></div>
+        <!-- Les héros -->
         <div class="section">
           <h3>Les Héros</h3>
           <img class="responsive-img" src="img/hero-list.png" alt="list of hero portraits">
@@ -86,6 +92,7 @@
           </p>
         </div>
         <div class="divider"></div>
+        <!-- Champs de bataille -->
         <div class="section row">
           <h3 class="col s12">Les champs de bataille</h3>
           <img class="col s12 l6 responsive-img" src="img/champ-de-bataille.png" alt="champ de bataille en forêt">
@@ -96,6 +103,7 @@
           </p>
         </div>
         <div class="divider"></div>
+        <!-- Les mecaniques -->
         <h3 class="col s12">Les mecaniques</h3>
         <div class="section row">
           <img class="col s12 l6" src="img/fog-of-war.png" alt="image fog of war">
@@ -119,10 +127,10 @@
               termine une fois que tous les Héros ont joué, et un nouveau tour commence alors.
             </p>
           </div>
-          <img class="col s12 l6" src="img/day-night-cycle.gif" alt="day and night cycle gif">
+          <img class="col s12 l6 responsive-img" src="img/day-night-cycle.gif" alt="day and night cycle gif">
         </div>
         <div class="section row">
-          <img class="col s12 l6" src="img/orientation.png" alt="image orientation">
+          <img class="col s12 l6 responsive-img" src="img/orientation.png" alt="image orientation">
           <div class="col s12 l6">
             <h4>L'orientation</h4>
             <p class="justify flow-text">
